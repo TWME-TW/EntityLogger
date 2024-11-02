@@ -28,6 +28,10 @@ public class EntityNearPlayerSpawnPool {
     private long newestSpawnTimeDifference = 0;
     private int totalCount = 0;
 
+    /**
+     * Creates a new instance of the EntityNearPlayerSpawnPool class.
+     * @param player The player for the pool.
+     */
     public EntityNearPlayerSpawnPool(Player player) {
         this.player = player;
     }
@@ -60,6 +64,10 @@ public class EntityNearPlayerSpawnPool {
         pools.remove(uuid);
     }
 
+    /**
+     * Gets the player for the pool.
+     * @return The player for the pool.
+     */
     public Player getPlayer() {
         return player;
     }
@@ -96,6 +104,10 @@ public class EntityNearPlayerSpawnPool {
         return entityCount.get(type);
     }
 
+    /**
+     * Gets the entity types in the pool.
+     * @return The entity types in the pool.
+     */
     public Set<EntityType> getEntityTypes() {
         return entityCount.keySet();
     }

@@ -9,7 +9,15 @@ import org.bukkit.entity.Player;
  * Data class for storing information about an entity spawn near a player.
  */
 public class EntityNearSpawnPlayerData extends SpawnData {
+
+    /**
+     * The closest player to the entity.
+     */
     public final Player closestPlayer;
+
+    /**
+     * The distance between the entity and the closest player.
+     */
     public final double distance;
 
     /**
